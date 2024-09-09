@@ -1,0 +1,5 @@
+rate-EUR = 0.085
+
+fun nok-to-EUR(input-number :: Number) -> Number:
+  input-number * rate-EUR
+end

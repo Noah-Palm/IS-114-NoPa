@@ -1,0 +1,5 @@
+rate-USD = 0.095
+
+fun nok-to-USD(input-number :: Number) -> Number:
+  input-number * rate-USD
+end

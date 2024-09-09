@@ -1,0 +1,15 @@
+#oppgir her valutakurs
+rate-USD = 0.094
+rate-EUR = 0.085
+#trenger ikke mer en 1 funksjon for å håndtere dette c:
+fun nok-to-val(input-verdi :: Number, valuta :: String ) -> Number:
+  doc: "Gi ett beløp i NOK og gi enten EURO eller USD som valuta"
+  if valuta == "EURO":
+    output-verdi = (input-verdi * rate-EUR)
+    output-verdi
+  else if valuta == "USD":
+    output-verdi = (input-verdi * rate-USD)
+    output-verdi
+  else: raise("vær vennlig oppgi enten EURO eller USD")
+  end
+end
